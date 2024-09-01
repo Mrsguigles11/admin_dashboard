@@ -59,7 +59,7 @@ a {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template: 1fr 2fr;
-    padding: 5px 10px 10px 50px;
+    padding: 15px 10px 10px 50px;
 }
 
 .header_row_one {
@@ -78,16 +78,31 @@ a {
     border-radius: 20px;
 }
 
-.search_bar > a {
+.search_bar > a, .row_one_icons > a {
     display: grid;
 }
 
-.search_bar > a > img {
+.search_bar > a > img, .row_one_icons > a > img {
     width: 25px;
     height: 25px;
     place-self: center;
 }
 
+.row_one_icons {
+    display: grid;
+    grid-template: 40px / 25px 40px 150px;
+    column-gap: 40px;
+}
+
+#row_one_giraffe {
+    width: 40px;
+    height: 40px;
+}
+
+.row_one_icons > div {
+    place-self: center start;
+    font-weight: 900;
+}
 
 a > img {
     width: 50px;
