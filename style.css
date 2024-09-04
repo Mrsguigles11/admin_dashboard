@@ -170,4 +170,30 @@ a {
 .main_content {
     grid-area: 2 / 2 / -1 / -1;
     background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 1fr;
+    gap: 40px;
+    padding: 80px 40px 40px 40px;
+}
+
+.projects > div {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.content_sidebar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 80px;
+    padding: 80px 40px 40px 0px;
+}
+
+.content_sidebar > div {
+    background-color: white;
+    border-radius: 10px;
 }
