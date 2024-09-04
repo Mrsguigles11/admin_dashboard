@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template: 1fr 4fr / 1fr 5fr;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     font-family: 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 18px;
 }
@@ -99,8 +99,8 @@ a {
 .row_one_icons {
     display: grid;
     grid-template: 60px / 25px 40px 150px;
-    column-gap: 20px;
-    place-self: center start;
+    column-gap: 30px;
+    place-self: center;
 }
 
 .header_row_one_username, .header_row_one_username:visited {
@@ -161,6 +161,7 @@ a {
     background-color: #0ea5e9;
     color: white;
     font-weight: 900;
+    font-size: 1rem;
 }
 
 
