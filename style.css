@@ -109,7 +109,7 @@ a {
     color: black;
 }
 
-#row_one_giraffe {
+#row_one_icon {
     width: 40px;
     height: 40px;
     place-self: center;
@@ -218,7 +218,7 @@ a {
     content: "Your Projects";
     position: absolute;
     top: -45px;
-    left: 10px;
+    left: 5px;
     font-weight: 650;
     font-size: 1.5rem;
 }
@@ -248,21 +248,48 @@ a {
 
 .announcements::before {
     content: "Announcements";
-    position: absolute;
-    font-weight: 650;
-    font-size: 1.5rem;
-    top: -45px;
-    left: 10px;
 }
 
 .announcements div:nth-child(1), .announcements div:nth-child(2) {
     border-bottom: #e2e8f0 solid 2px;
 }
 
-.announcements > div > h1 {
+.announcements > div > h1, .trending > div {
     font-size: 1rem;
 }
 
 .announcements > div > p {
     font-size: 0.8rem;
+}
+
+.trending {
+    display: grid;
+    grid-template: repeat(4,1fr) / 1fr 3fr;
+    padding: 30px;
+    position: relative;
+}
+
+.trending > a > img {
+    width: 50px;
+    height: 50px;
+}
+
+.trending > a, .trending > div {
+    place-self: center start;
+}
+
+.trending > div p:nth-child(1) {
+    font-weight: 650;
+}
+
+.trending::before {
+    content: "Trending";
+}
+
+.trending::before, .announcements::before {
+    position: absolute;
+    font-weight: 650;
+    font-size: 1.5rem;
+    top: -45px;
+    left: 10px;
 }
