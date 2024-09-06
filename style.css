@@ -217,8 +217,8 @@ a {
 .card:nth-child(1)::before {
     content: "Your Projects";
     position: absolute;
-    top: -55px;
-    left: 0px;
+    top: -45px;
+    left: 10px;
     font-weight: 650;
     font-size: 1.5rem;
 }
@@ -232,4 +232,37 @@ a {
 .content_sidebar > div {
     background-color: white;
     border-radius: 10px;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 30px;
+    row-gap: 10px;
+    position: relative;
+}
+
+.announcements > div {
+    padding: 10px;
+}
+
+.announcements::before {
+    content: "Announcements";
+    position: absolute;
+    font-weight: 650;
+    font-size: 1.5rem;
+    top: -45px;
+    left: 10px;
+}
+
+.announcements div:nth-child(1), .announcements div:nth-child(2) {
+    border-bottom: #e2e8f0 solid 2px;
+}
+
+.announcements > div > h1 {
+    font-size: 1rem;
+}
+
+.announcements > div > p {
+    font-size: 0.8rem;
 }
