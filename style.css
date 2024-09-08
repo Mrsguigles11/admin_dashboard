@@ -59,6 +59,12 @@ a {
     font-weight: 900;
 }
 
+.sidebar_text:hover, .sidebar_svg:hover, .dashboard_svg:hover, .dashboard_text:hover {
+    color: #e2e8f0;
+    fill: #e2e8f0;
+    cursor: pointer;
+}
+
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
@@ -141,6 +147,10 @@ a {
     font-size: 1.5rem;
     font-weight: 900;
     align-self: start;
+}
+
+.header_user > span:hover {
+    cursor: pointer;
 }
 
 .hi_there {
@@ -291,6 +301,10 @@ a {
 
 .trending > div p:nth-child(1) {
     font-weight: 650;
+}
+
+.trending > div p:nth-child(1):hover {
+    cursor: pointer;
 }
 
 .trending::before {
